@@ -1,7 +1,7 @@
 {
   "name": "jaelp",
   "version": "0.1.0",
-  "homepage": "https://twoja_nazwa_uzytkownika.github.io/nazwa_repozytorium",
+  "homepage": "https://dandiramdidam.github.io/jaelp/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -37,5 +37,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "gh-pages": "^6.1.1"
   }
 }
