@@ -14,6 +14,18 @@ const wordSets = {
     { english: 'leg', polish: 'noga' },
     { english: 'eye', polish: 'oko' },
     { english: 'ear', polish: 'ucho' },
+    { english: 'toe', polish: 'palec stopy' },
+    { english: 'finger', polish: 'palec ręki' },
+    { english: 'tongue', polish: 'język' },
+    { english: 'neck', polish: 'szyja' },
+    { english: 'tooth', polish: 'ząb' },
+    { english: 'face', polish: 'twarz' },
+    { english: 'stomach', polish: 'brzuch' },
+    { english: 'hair', polish: 'włosy' },
+    { english: 'back', polish: 'plecy' },
+    { english: 'mouth', polish: 'usta' },
+    { english: 'lip', polish: 'warga' },
+    { english: 'thigh', polish: 'udo' },
   ]
 };
   
@@ -24,7 +36,7 @@ function Game() {
   const [inputValue, setInputValue] = useState('');
   const [score, setScore] = useState(0);
   const [isEnglishToPolish, setIsEnglishToPolish] = useState(true);
-  const [showAnswer, setShowAnswer] = useState(false);
+  // const [showAnswer, setShowAnswer] = useState(false);
 
   const handleCategoryChange = (event) => {
     setCurrentCategory(event.target.value);
@@ -76,6 +88,7 @@ function Game() {
     setInputValue(event.target.value);
   };
 
+  // ustawienie kategorii iii
   // Dodajemy sprawdzenie, czy kategoria zawiera słowa
   const currentWordSet = wordSets[currentCategory];
   const currentWord = currentWordSet && currentWordSet.length > 0
